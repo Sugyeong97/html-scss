@@ -1,0 +1,54 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid gray;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.gnb {
+  display: flex;
+  gap: 48px;
+}
+.gnb-sub {
+  font-size: 24px;
+}
+
+main {
+  padding: 40px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+footer {
+  padding: 40px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

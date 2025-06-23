@@ -1,0 +1,64 @@
+$padding: 40px;
+$border: 1px solid gray;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px;
+  border: $border;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding;
+  border: $border;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.gnb {
+  display: flex;
+  gap: 48px;
+
+  &-sub {
+    font-size: 24px;
+  }
+}
+
+//
+
+main {
+  padding: $padding;
+  border: $border;
+
+  display: flex;
+  justify-content: space-between;
+  gap: $padding;
+}
+
+//
+
+footer {
+  padding: $padding;
+  border: $border;
+
+  display: flex;
+  flex-direction: column;
+  gap: $padding;
+}
