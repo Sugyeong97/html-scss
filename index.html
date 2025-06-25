@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- js -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/jquery.js"></script>
+
     <!-- css -->
     <link
       rel="stylesheet"
@@ -20,20 +28,45 @@
         <ul class="gnb">
           <li class="gnb-sub">메뉴1</li>
           <li class="gnb-sub">메뉴2</li>
-          <li class="gnb-sub">메뉴3</li>
+          <li class="gnb-sub" style="position: relative">
+            메뉴3
+            <ul class="sub-menu-3" style="position: absolute; display: none">
+              <li>3-1</li>
+              <li>3-2</li>
+              <li>3-3</li>
+            </ul>
+          </li>
+
           <li class="gnb-sub">메뉴4</li>
         </ul>
       </header>
 
       <main>
         <div class="content">
-          <p>본문</p>
-          <div>Lorem ipsum dolor sit amet.</div>
+          <p>李 대통령 ‘국민사서함’ 운영 시작</p>
+          <div class="content-text">
+            국민이 이재명 대통령에게 직접 질문할 수 있는 ‘국민사서함'이
+            운영된다. 대통령실은 24일 ‘국민사서함: 함께 만드는 국민주권정부’
+            서비스를 시작했다고 밝혔다. 국민사서함은 국민이 직접 경제·민생,
+            사회, 정치, 외교·안보 등의 분야에 대해 대통령에게 질문하는 제도다.
+            접수된 질문은 이 대통령에게 보고되며, 이 중 공감대가 높거나 시의성이
+            있는 경우 이 대통령이 직접 답변할 계획이다. 문재인 정부 시절 청와대
+            누리집에 질문 내용이 공개됐던 국민청원 제도와 달리, 국민 사서함은
+            폐쇄형인 구글폼을 통해 질문이 등록돼 대통령실이 공개하기로 선별한
+            내용만 일반에 공개될 것으로 보인다.
+          </div>
         </div>
 
         <div class="side-bar">
-          <p>사이드바</p>
-          <div>Lorem ipsum dolor sit amet.</div>
+          <p>‘케이팝 데몬 헌터스’, 넷플릭스 1위</p>
+          <div class="side-bar-text">
+            K팝을 소재로 한 애니메이션 ‘케이팝 데몬 헌터스’가 넷플릭스 글로벌
+            영화 순위에서 나흘 연속 정상을 차지하며 전 세계적인 인기를 입증하고
+            있다. 25일 온라인 동영상 서비스(OTT) 콘텐츠 순위 집계 사이트
+            플릭스패트롤에 따르면, ‘케이팝 데몬 헌터스’는 24일 기준 한국, 미국,
+            대만, 태국, 필리핀, 싱가포르, 포르투갈 등 41개국에서 넷플릭스 영화
+            부문 1위를 기록했다.
+          </div>
         </div>
       </main>
 

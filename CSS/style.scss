@@ -1,10 +1,16 @@
-$padding: 40px;
+$emptySmall: 20px;
+$emptyMiddle: 40px;
 $border: 1px solid gray;
+
+$lgTitle: 50px;
+$mdTitle: 32px;
+
+//
 
 body {
   width: 100vw;
   height: 100vh;
-  padding: 20px;
+  padding: $emptySmall;
 }
 
 .container {
@@ -14,9 +20,9 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: $emptySmall;
 
-  padding: 20px;
+  padding: $emptySmall;
   border: $border;
 }
 
@@ -24,12 +30,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $padding;
+  padding: $emptyMiddle;
   border: $border;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: $lgTitle;
 }
 
 .gnb {
@@ -44,21 +50,44 @@ h1 {
 //
 
 main {
-  padding: $padding;
+  padding: $emptyMiddle;
   border: $border;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $emptySmall;
+}
+
+main > div {
   display: flex;
-  justify-content: space-between;
-  gap: $padding;
+  flex-direction: column;
+  gap: $emptySmall;
+}
+
+div > p {
+  font-weight: bold;
+  font-size: $mdTitle;
+}
+
+.content,
+.side-bar {
+  border: $border;
+  padding: $emptySmall;
+}
+
+.content-text,
+.side-bar-text {
+  height: 300px;
+  line-height: 2;
 }
 
 //
 
 footer {
-  padding: $padding;
+  padding: $emptyMiddle;
   border: $border;
 
   display: flex;
   flex-direction: column;
-  gap: $padding;
+  gap: $emptyMiddle;
 }

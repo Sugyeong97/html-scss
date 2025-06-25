@@ -38,9 +38,32 @@ h1 {
 main {
   padding: 40px;
   border: 1px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+main > div {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div > p {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.content,
+.side-bar {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.content-text,
+.side-bar-text {
+  height: 300px;
+  line-height: 2;
 }
 
 footer {
